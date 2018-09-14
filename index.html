@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro">
+    <link rel="stylesheet" href="bundle.css">
+    <title>UBEREAUCRACY</title>
+</head>
+<body>
+    <header class="mdc-top-app-bar mdc-top-app-bar--short">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section">
+                <a href="#" class="mdc-top-app-bar__title"><img src="assets/uberlogo.svg" alt="ubereaucracy text logo"></a>
+            </section>
+            <section class="mdc-top-app-bar__section--align-end">
+                <a href="#" class="mdc-top-app-bar__title bar-icon" aria-label="Home">Home</a>
+                <a href="#" class="mdc-top-app-bar__title bar-icon" aria-label="What We Do">What We Do</a>
+                <a href="#" class="mdc-top-app-bar__title bar-icon" aria-label="Contact Us">Contact Us</a>
+            </section>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner-body">
+        <h1 class="banner__title">Never worry about paperwork again</h1>
+        <button class="mdc-button">Sign Up</button>
+    </div>
+    </div>
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell">
+                <img src="assets/find-icon.svg" alt="find help icon">
+                <h3 class="grid__title">find help easily</h3>
+                <p class="grid__text">We'll help connect you with freelance professionals offering a range of services, offers and promotions.</p>
+            </div>
+            <div class="mdc-layout-grid__cell">
+                <img src="assets/comp-icon.svg" alt="computer icon">
+                <h3 class="grid__title">online submission</h3>
+                <p class="grid__text">You can use your home computer to submit documents to our database of professionals. Moreover, you can set up a profile with documents, which you can update.</p>
+            </div>
+            <div class="mdc-layout-grid__cell">
+                <img src="assets/mobile-icon.svg" alt="mobile icon">
+                <h3 class="grid__title">mobile services</h3>
+                <p class="grid__text">Get the app and enjoy our services on the go, with a mobile-only news feed detailing the availability of the couriers in our network.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone form">
+                <div class="mdc-card mdc-card">
+                    <div class="mdc-card__media mdc-card__media--square">
+                        <div class="mdc-card__media-content">BS–INF39 Form
+                                <div class="divider"></div>
+                                <div class="mdc-form-field">
+                                <div class="mdc-text-field fullname-input">
+                                    <input type="text" id="fullName" class="mdc-text-field__input" required>
+                                    <label class="mdc-floating-label" for="fullName">Full Name</label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <div class="mdc-text-field email-field">
+                                    <input type="text" id="email" class="mdc-text-field__input" required>
+                                    <label class="mdc-floating-label" for="email">E-mail Address</label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <div class="mdc-text-field id-field">
+                                    <input type="text" id="id" class="mdc-text-field__input" required>
+                                    <label class="mdc-floating-label" for="id">ID Number</label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <div class="mdc-select">
+                                    <select class="mdc-select__native-control" required>
+                                        <option value="" selected></option>
+                                        <option value="ID Renewal">ID Renewal</option>
+                                        <option value="Driver's License Test">Driver's License Test</option>
+                                        <option value="Birth Certificate Issuance">Birth Certificate Issuance</option>
+                                        <option value="Marriage Annulment">Marriage Annulment</option>
+                                    </select>
+                                    <label class="mdc-floating-label">Services</label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <div class="mdc-text-field mdc-text-field--textarea">
+                                    <textarea id="message" class="mdc-text-field__input" rows="3" cols="20"></textarea>
+                                    <label for="message" class="mdc-floating-label">Message</label>
+                                </div>
+                                <div class="mdc-checkbox">
+                                    <input type="checkbox" class="mdc-checkbox__native-control" id="agreement" required>
+                                    <div class="mdc-checkbox__background">
+                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73, 12.91, 8.1, 19.28 22.79, 4.59"></path>
+                                        </svg>
+                                        <div class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                    <label for="agreement">I agree to the <a href="#">terms and conditions</a></label>
+                                </div>
+                                <div class="mdc-radio">
+                                    <input class="mdc-radio__native-control" type="radio" id="yes" name="radios">
+                                    <div class="mdc-radio__background">
+                                        <div class="mdc-radio__outer-circle"></div>
+                                        <div class="mdc-radio__inner-circle"></div>
+                                    </div>
+                                </div>
+                                <label for="yes">Yes</label>
+                                <div class="mdc-radio">
+                                        <input class="mdc-radio__native-control" type="radio" id="no" name="radios">
+                                        <div class="mdc-radio__background">
+                                            <div class="mdc-radio__outer-circle"></div>
+                                            <div class="mdc-radio__inner-circle"></div>
+                                        </div>
+                                    </div>
+                                    <label for="no">No</label>
+                                    <div class="form__buttons">
+                                    <button type="reset" class="mdc-button reset-btn">
+                                        Reset
+                                    </button>
+                                    <button type="submit" class="mdc-button--raised mdc-button">
+                                        Submit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone about">
+                <div class="about-us">
+                <h3>About Us</h3>
+                <p>We boast an enviable approval rate. 95% of our users have reported to have been successful in finding a courier through our rigorous and expansive network. On the other hand, the couriers have reported to be satisfied with our services regarding remuneration, scheduling, and most importantly connection to an ever-growing user base.</p>
+                <div class="logo-background">
+                <img src="assets/uberlogo.svg" alt="ubereaucracy text logo">
+               </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Ubereaucracy © 2017
+        <a href="#">
+          <img src="assets/eagle-logo.svg" alt="ubereaucracy eagle logo">
+        </a>
+    </footer>
+    <script src="bundle.js" async></script>
+</body>
+</html>
