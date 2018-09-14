@@ -1,0 +1,211 @@
+$mdc-theme-primary: #000;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-secondary: #000;
+$mdc-theme-on-secondary: #442C2E;
+$mdc-theme-surface: lavender;
+$mdc-theme-on-surface: #000;
+$mdc-theme-background: #FFFFFF;
+$mdc-theme-on-background: #442C2E;
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/button/mdc-button";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+@import "@material/textfield/mdc-text-field";
+@import "@material/select/mdc-select";
+@import "@material/checkbox/mdc-checkbox";
+@import "@material/radio/mdc-radio";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", monospace;
+}
+
+.mdc-top-app-bar {
+    @include mdc-top-app-bar-fill-color(primary);
+    @include mdc-elevation(2, #000, 0.7);
+}
+
+.bar-icon {
+    font-size: 90%;
+    line-height: 3.25rem;
+    padding-right: 20px;
+    @include mdc-top-app-bar-ink-color(background);
+}
+
+.banner {
+    background-image: url("/assets/banner_large.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 64vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-body {
+    width: 50%;
+}
+
+.banner__title {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mdc-button {
+    display: block;
+    margin: auto;
+    @include mdc-button-container-fill-color(on-primary);
+    @include mdc-button-ink-color(primary);
+}
+
+.mdc-layout-grid {
+    text-align: center;
+}
+
+.grid__title {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    margin: 0;
+    margin-top: 2%;
+}
+
+.grid__text {
+    line-height: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.mdc-layout-grid__cell img {
+    width: 25%;
+    height: auto;
+}
+
+img[src="assets/mobile-icon.svg"] {
+    width: 15.5%;
+}
+
+.form .mdc-card {
+    @include mdc-card-fill-color(background);
+    @include mdc-elevation(4, #aaa, 0.8);
+    padding: 2%;
+    text-align: left;
+}
+
+.form .divider {
+    border: 1px solid black;
+    margin: 0.75rem 0;
+}
+
+.mdc-text-field {
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+.mdc-select {
+    @include mdc-select-container-fill-color(surface);
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+.mdc-select label {
+    padding-left: 2%;
+}
+
+.mdc-select select {
+    padding-left: 1.5%;
+}
+
+.mdc-text-field--textarea {
+    @include mdc-text-field-textarea-fill-color(surface);
+}
+
+.mdc-text-field--textarea textarea {
+    resize: none;
+}
+
+label a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+label[for="agreement"] {
+    margin-left: 1.75rem;
+    position: relative;
+    top: 8px;
+}
+
+.mdc-radio {
+    position: relative;
+    top: 37.5px;
+    left: -49px;
+}
+
+label[for="no"],
+label[for="yes"] {
+    position: relative;
+    left: -55px;
+    top: 20px;
+}
+
+.form__buttons {
+    display: flex;
+    position: relative;
+    top: 45px;
+}
+
+.form__buttons .mdc-button--raised {
+    @include mdc-button-container-fill-color(primary);
+    @include mdc-button-ink-color(on-primary);
+}
+
+.logo-background {
+    background: #000;
+    height: 15%;
+    padding: 2%;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 77.75vh;
+    padding: 4%;
+    background: lavender;
+    @include mdc-elevation(1, #aaa, 0.8);
+}
+
+.about-us h3 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.about-us p {
+    line-height: 1.5rem;
+}
+
+.about-us img {
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background: #f5f5f5;
+    padding: 2% 0;
+    height: 12vh;
+    margin: 0;
+}
+
+footer a {
+    margin-top: 2%;
+}
+
+footer img {
+    height: 40%;
+}
