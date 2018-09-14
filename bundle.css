@@ -3527,7 +3527,6 @@ body {
   color: var(--mdc-theme-background, #FFFFFF); }
 
 .banner {
-  background-image: url(6d372ebfecdcb24eeea90b6819890dec.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 64vh;
