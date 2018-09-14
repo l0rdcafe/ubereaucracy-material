@@ -3509,7 +3509,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Anonymous Pro", monospace; }
+  font-family: "Anonymous Pro", monospace;
+  overflow-x: hidden; }
 
 .mdc-top-app-bar {
   background-color: #000;
